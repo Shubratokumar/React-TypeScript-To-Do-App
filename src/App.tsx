@@ -1,15 +1,16 @@
 import './App.css'
+import InputField from './components/InputField';
+import { useState } from 'react';
 
-let name = "shubrato";
-let student: boolean = true;
-let hobbies: string[];
-// Tuple
-let role: [number, string];
+const App: React.FC = () => {
 
-const App = () => {
+    const [todo, setTodo] = useState<string>(" ");
+    console.log(todo);
+
     return (
         <div className='App' >
-            Hello World
+            <span className="heading">Daily Tasks</span>
+            <InputField todo={todo} setTodo={setTodo} />
         </div>
     );
 };

@@ -1,1 +1,1 @@
-# Fundamentals of MUI with React TypeScript
+# Fundamentals React TypeScript
